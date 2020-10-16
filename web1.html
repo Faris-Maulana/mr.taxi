@@ -1,0 +1,50 @@
+<!doctype html>
+<title>FORM ORDER TAXI</title>
+<link rel="stylesheet" href="faris.css">
+<form class="myForm" action="http://maps.google.com/maps" method="get" target="_blank">
+  <fieldset id="customer">
+    <label for="customer_name">Nama </label>
+    <input type="text" name="customer_name" id="customer_name" placeholder="Aku Mau Kamu" required>
+
+    <label for="phone_number">No.Handphone </label>
+    <input type="tel" name="phone_number" id="phone_number" placeholder="08138021xxx">
+
+    <label for="email_address">Email </label>
+    <input type="email" name="email_address" id="email_address" placeholder="akukamu16@gmail.com">
+  </fieldset>
+  <fieldset id="taxi">
+    <legend>Taksi mana yang Anda butuhkan?</legend>
+    <label> <input type="radio" name="taxi" id="taxi_car" required value="minibus"> Mobil Minibus (2-4 Penumpang) </label>
+    <label> <input type="radio" name="taxi" id="taxi_van" required value="van"> Mobil Van (4-6 Penumpang)</label>
+    <label> <input type="radio" name="taxi" id="taxi_tuk" required value="travel"> Mobil Travel (6-10 Penumpang)</label>
+  </fieldset>
+
+  <fieldset id="extras">
+    <legend>Extras</legend>
+    <label> <input type="checkbox" name="extras" id="extras_bayi" value="bayi"> Membawa Bayi </label>
+    <label> <input type="checkbox" name="extras" id="extras_roda" value="kursi roda"> Orang menggunakan kursi roda </label>
+  </fieldset>
+
+  <fieldset id="pickup">
+    <label for="pickup_time">Tanggal/Waktu Penjemputan</label>
+    <input type="datetime-local" name="pickup_time" id="pickup_time" required>
+
+    <label for="pickup_place">Tempat Penjemputan</label>
+    <input text, name="saddr" placeholder="Jakarta">
+    </select>
+  </fieldset>
+
+  <fieldset id="dropoff">
+  <label for="dropoff_place">Tempat Pengembalian</label>
+    <input type="text" name="daddr" id="dropoff_place" required list="destinations" placeholder="Semarang">
+
+  </fieldset>
+
+  <fieldset id="instructions">
+    <label for="comments">Notes</label>
+    <textarea name="comments" id="comments" maxlength="500" placeholder="e.g : Saya Bersama 4 Orang Lebih"></textarea>
+  </fieldset>
+
+  <button> submit </button>
+
+</form>
